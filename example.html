@@ -2,13 +2,20 @@
   <head>
     <title>ParaView Glance Demo</title>
   </head>
-  <body>
-    <script>
+  <body style="background-color: black;">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: auto;">
+      <p style="color: white; font-weight: 700; font-size: large;">
+        Embedded Paraview Glance
+      </p>
+
+      <script>
         var app = "https://kitware.github.io/paraview-glance/app";
-        var datadir = "https://raw.githubusercontent.com/mbarzegary/datasets-and-scenes/main/";
-        var file = "test.vtkjs";
+        var datadir = "https://raw.githubusercontent.com/jmysliv/paraview-glance-demo/master/";
+        var file = "skull.vtkjs";
 
         document.write("<iframe src='" + app + "?name=" + file + "&url=" +datadir + file + "' id='iframe' width='1100' height='900'></iframe>");
     </script>
+    </div>
+   
   </body>
 </html>
